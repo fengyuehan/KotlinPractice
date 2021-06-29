@@ -32,7 +32,7 @@ dependencies {
 
     implementation project(path:":common")
     if (!singleModule.toBoolean()){
-
+        implementation project(path: ':webview')
     }
 
 }
