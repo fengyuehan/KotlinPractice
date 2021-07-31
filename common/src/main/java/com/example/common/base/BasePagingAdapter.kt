@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.common.R
 
-abstract class BasePagingAdapter<T:Any>(private var diffUtil: DiffUtil.ItemCallback<T>):
+abstract class BasePagingAdapter<T:Any>(diffUtil: DiffUtil.ItemCallback<T>):
     PagingDataAdapter<T, RecyclerView.ViewHolder>(diffUtil) {
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val item = getItem(position) ?: return

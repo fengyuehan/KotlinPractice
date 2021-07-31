@@ -10,11 +10,12 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
 import androidx.core.view.isVisible
+import com.alibaba.android.arouter.facade.annotation.Route
 import com.example.common.Constants
 import com.example.common.base.BaseActivity
 import com.example.webview.databinding.ActivityWebviewBinding
 
-
+@Route(path = Constants.PATH_WEBVIEW)
 class WebviewActivity :BaseActivity<ActivityWebviewBinding>() {
     private lateinit var mWebView: WebView
 

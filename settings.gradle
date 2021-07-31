@@ -1,3 +1,6 @@
+include ':personal'
+include ':project'
+include ':home'
 include ':webview'
 include ':common'
 include ':app'

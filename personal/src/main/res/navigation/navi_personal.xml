@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@layout/fragment_personal"
+    android:id="@+id/navi_personal">
+    <fragment
+        android:id="@+id/fragment_personal"
+        android:label="PersonalFragment"
+        android:name="com.example.personal.PersonalFragment"
+        tools:layout="@layout/fragment_personal">
+
+    </fragment>
+</navigation>

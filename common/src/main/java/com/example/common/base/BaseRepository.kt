@@ -11,7 +11,7 @@ import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.*
 import java.io.IOException
 
-class BaseRepository {
+open class BaseRepository {
     //默认是public
     companion object{
         private const val TAG = "BaseRepository"

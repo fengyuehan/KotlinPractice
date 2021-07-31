@@ -7,10 +7,14 @@ import com.example.common.loadsir.EmptyCallback
 import com.example.common.loadsir.ErrorCallback
 import com.example.common.loadsir.LoadingCallback
 import com.example.common.utils.AppHelper
+import com.example.home.di.moduleHome
 import com.kingja.loadsir.core.LoadSir
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.startKoin
 
 class MainApp:Application() {
-    //private val modules = arrayListOf(mo)
+    private val modules = arrayListOf(moduleHome)
 
     override fun onCreate() {
         super.onCreate()
@@ -21,7 +25,11 @@ class MainApp:Application() {
     }
 
     private fun initKoin() {
-        TODO("Not yet implemented")
+        startKoin {
+            androidLogger()
+            androidContext(this@MainApp)
+            modules(modules = modules)
+        }
     }
 
     private fun initLoadSir() {
