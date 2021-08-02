@@ -20,6 +20,7 @@ dependencies {
         implementation project(path: ':home')
         implementation project(path: ':project')
         implementation project(path: ':personal')
+        implementation project(path: ':login')
     }
 
 }
